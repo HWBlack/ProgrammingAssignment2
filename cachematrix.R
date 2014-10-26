@@ -1,34 +1,15 @@
-## Creates a list that for cache the value of solve 
-## based on https://github.com/rdpeng/ProgrammingAssignment2
+## Put comments here that give an overall description of what your
+## functions do
 
-## makeCacheMatrix -> creates the matrix to be solved
-## set -> sets the matrix
-## get -> gets the martix
-## setsolve -> sets the value of solve
-## returnsolve -> returns the value of solve
+## Write a short comment describing this function
+
 makeCacheMatrix <- function(x = matrix()) {
-      mat <- NULL
-      set <- function(y) {
-            x <<- y
-            mat <<- NULL
-      }
-      get <- function() x
-      setsolve <- function(solve) mat <<- solve
-      getsolve <- function() mat
-      list(set = set, get = get,
-           setsolve = setsolve,
-           getsolve = getsolve)
+
 }
 
 
-## cacheSolve -> cacluates the vale of solve for the ChacheMatrix
+## Write a short comment describing this function
+
 cacheSolve <- function(x, ...) {
-      mat <- x$getsolve()
-      if (!is.null(mat)) {
-              return (mat)
-        }
-      data <- x$get()        
-      mat <- solve(data)
-      x$setsolve(mat)
-      mat
+        ## Return a matrix that is the inverse of 'x'
 }
